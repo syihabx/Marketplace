@@ -21,11 +21,11 @@ namespace MarketplaceWeb.Models.Base
 
         [StringLength(50)]
         [Column("CreatedBy", TypeName = "nvarchar(50)")]
-        public string CreatedBy { get; set; }
+        public required string CreatedBy { get; set; }
 
         [StringLength(50)]
         [Column("UpdatedBy", TypeName = "nvarchar(50)")]
-        public string UpdatedBy { get; set; }
+        public string? UpdatedBy { get; set; }
 
         [Column("IsDeleted", TypeName = "bit")]
         public bool IsDeleted { get; set; } = false;
