@@ -1,0 +1,7 @@
+# Ignore Visual Studio directories
+.vs/
+.github/
+MarketplaceWeb/obj/Debug/
+
+# Ignore Git directory
+.git/
