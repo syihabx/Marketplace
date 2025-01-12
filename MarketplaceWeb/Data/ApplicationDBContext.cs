@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MarketplaceWeb.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace BulkyWeb.Data
 {
@@ -8,5 +9,7 @@ namespace BulkyWeb.Data
         {
 
         }
+
+        public DbSet<CreateTableTest> CreateTableTest { get; set; }
     }
 }
